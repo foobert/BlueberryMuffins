@@ -5,15 +5,8 @@
 # http://creativecommons.org/licenses/by/3.0/ or send a letter to Creative
 # Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
 
-MAIN_INGREDIENTS := 300g_flour 125_sugar 1tsp_baking_soda 2tsp_baking_powder
-
-ifeq ($(VEGAN),1)
-	MAIN_INGREDIENTS := $(MAIN_INGREDIENTS) 125g_soy_butter
-	SEC_INGREDIENTS := 200g_soy_joghurt
-else
-	MAIN_INGREDIENTS := $(MAIN_INGREDIENTS) 125g_butter
-	SEC_INGREDIENTS := 200g_joghurt 2_eggs
-endif
+MAIN_INGREDIENTS := 300g_flour 125_sugar 1tsp_baking_soda 2tsp_baking_powder 125g_soy_butter
+SEC_INGREDIENTS := 125g_soy_joghurt splash_of_soy_milk
 
 muffins: batter | muffin_form oven
 	@echo "Fill batter into muffin form"
