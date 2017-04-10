@@ -20,7 +20,7 @@ pre_batter: $(MAIN_INGREDIENTS) | bowl
 joghurt: $(SEC_INGREDIENTS) | bowl
 	@echo "Mix $? in $| until smooth"
 
-batter: pre_batter joghurt 1_big_glass_of_blueberries
+batter: pre_batter 1_big_chunk_of_frozen_blueberries
 	@echo "Mix joghurt into prepared batter"
 	@echo "Put blueberries into batter"
 
